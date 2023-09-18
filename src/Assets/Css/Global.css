@@ -1,0 +1,122 @@
+:root {
+  --white: #fff;
+  --gray: #1c1c1c;
+  --accent: #14b51e;
+}
+body {
+  background-color: var(--white);
+  color: var(--gray);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a:hover, a:focus, a:active {
+  color: var(--accent);
+}
+.Header {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.SubHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--accent);
+  color: var(--white);
+  padding: 8px;
+  align-items: center;
+}
+.gap {
+  display: flex;
+  gap: 10px;
+}
+.scroll {
+  overflow-x: scroll;
+}
+.Footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: var(--accent);
+  width: 100%;
+  color: var(--white);
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.down {
+  display: flex;
+  flex-direction: column;
+}
+.down a {
+  color: var(--white);
+}
+.AdaptPhone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.AfishaNav {
+  width: 100%;
+  display: flex;
+}
+@media screen and (max-width: 719px) {
+  .pc {
+    display: none;
+  }
+  .Header {
+    display: flex;
+  }
+  .Logo img {
+    width: 120px;
+  }
+  .Footer {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .phone {
+    display: none;
+  }
+  .Header {
+    gap: 50px;
+  }
+  .Logo img {
+    width: 170px;
+  }
+}
+
+.Afisha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Calendar-Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 90%;
+}
+
+.calendar-date {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+.calendar-date.selected {
+  background-color: #ff8c00;
+  color: white;
+}

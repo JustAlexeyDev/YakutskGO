@@ -10,7 +10,7 @@
 *::after {
 	box-sizing: border-box;
     transition: all;
-    transition: 0.3s;
+    transition: 0.2s;
 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -18,7 +18,7 @@
 
 a, a:link, a:visited  {
     text-decoration: none;
-    color: #373737;
+		color: #1c1c1c;
 }
 
 a:hover  {
