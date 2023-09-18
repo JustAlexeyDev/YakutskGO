@@ -9,6 +9,7 @@ import './Assets/Css/SideBar.css';
 // Import Components
 import Header from "./Components/Header";
 import SubHeader from "./Components/SubHeader";
+import Footer from "./Components/Footer";
 // Import Pages
 import Home from "./Home/Home";
 import Afisha from "./Pages/Afisha";
@@ -25,6 +26,7 @@ ReactDOM.render(
         <Route path="/Afisha" element={<Afisha />}/>
         <Route path="/NotFound" element={<NotFound />}/>
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

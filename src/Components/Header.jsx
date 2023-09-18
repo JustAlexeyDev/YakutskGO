@@ -8,6 +8,9 @@ import SideBar from './SideBar';
 const Header = () => {
   return(
     <div className="Header">
+      <div className='phone'>
+        <SideBar />
+      </div>
       <div className='Logo'>
         <img src={logo} alt='logo'/>
       </div>
@@ -20,9 +23,6 @@ const Header = () => {
         <Link to='/Forum'>Форум</Link>
         <Link to='/Radio'>Радио</Link>
         <Link to='/Ad'>Реклама</Link>
-      </div>
-      <div className='phone'>
-        <SideBar />
       </div>
     </div>
   );

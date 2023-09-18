@@ -18,7 +18,8 @@ body {
   justify-content: space-between;
   background-color: var(--accent);
   color: var(--white);
-  padding: 4px;
+  padding: 8px;
+  align-items: center;
 }
 .gap {
   display: flex;
@@ -27,22 +28,44 @@ body {
 .scroll {
   overflow-x: scroll;
 }
+.Footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: var(--accent);
+  width: 100%;
+  color: var(--white);
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.down {
+  display: flex;
+  flex-direction: column;
+}
+.down a {
+  color: var(--white);
+}
 @media screen and (max-width: 719px) {
   .pc {
     display: none;
   }
   .Header {
     display: flex;
-    flex-direction: column;
   }
   .Logo img {
     width: 120px;
   }
+  .Footer {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 720px) {
+  .phone {
+    display: none;
+  }
   .Header {
     gap: 50px;
-    justify-content: center;
   }
   .Logo img {
     width: 170px;
