@@ -16,9 +16,9 @@ const SubHeader = () => {
       <span>{formattedDate}</span>
       <span></span>
       <div className='gap'>
-        <img width={25} src={vk} alt='social'/>              
-        <img width={25} src={telegram} alt='social'/>              
-        <img width={25} src={whatsapp} alt='social'/>         
+        <a href='#'><img width={25} src={vk} alt='social'/>   </a>           
+        <a href='#'><img width={25} src={telegram} alt='social'/>              </a>
+        <a href='#'><img width={25} src={whatsapp} alt='social'/>  </a>       
       </div>
     </div>
   );

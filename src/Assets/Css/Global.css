@@ -84,3 +84,39 @@ a:hover, a:focus, a:active {
     width: 170px;
   }
 }
+
+.Afisha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Calendar-Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 90%;
+}
+
+.calendar-date {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+.calendar-date.selected {
+  background-color: #ff8c00;
+  color: white;
+}

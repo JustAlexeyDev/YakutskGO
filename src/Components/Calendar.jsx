@@ -1,35 +1,48 @@
 import React, { useState } from "react";
+import moment from "moment";
+import { useNavigate } from "react-router-dom";
+
 
 const Calendar = () => {
   const [selectedDate, setSelectedDate] = useState("");
+  const navigate = useNavigate();
 
   const handleDateClick = (date) => {
     setSelectedDate(date);
+    navigate(`/events/${date}`);
   };
 
   const renderCalendar = () => {
-    const calendarDays = [1];
+    const startDate = moment().startOf("month");
+    const endDate = moment().endOf("month");
+    const days = [];
+    let currentDate = startDate;
 
-    // Здесь можно добавить логику для генерации дней календаря
+    while (currentDate.isSameOrBefore(endDate)) {
+      days.push(currentDate.clone());
+      currentDate.add(1, "day");
+    }
 
-    // Предположим, что calendarDays содержит список дат
-
-    return calendarDays.map((date) => (
+    return days.map((date) => (
       <div
-        key={date}
-        onClick={() => handleDateClick(date)}
-        className={`calendar-date ${selectedDate === date ? "selected" : ""}`}
+        key={date.format("YYYY-MM-DD")}
+        onClick={() => handleDateClick(date.format("YYYY-MM-DD"))}
+        className={`calendar-date ${selectedDate === date.format("YYYY-MM-DD") ? "selected" : ""}`}
       >
-        {date}
+        {date.format("D")}
       </div>
     ));
   };
 
-  return(
-    <div className="calendar">
-      {renderCalendar()}
+  return (
+    <div className="Calendar-Container">
+      <div className="calendar">
+        {renderCalendar()}
+      </div>        
     </div>
-  ); 
+
+  );
+
 };
 
 export default Calendar;

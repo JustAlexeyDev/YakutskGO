@@ -3,7 +3,7 @@ import AfishaNav from "../Components/AfishaNav";
 import Calendar from "../Components/Calendar";
 const Afisha = () => {
   return(
-    <div>
+    <div className="Afisha">
       <AfishaNav />  
       <Calendar />
     </div>
