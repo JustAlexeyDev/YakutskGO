@@ -1,5 +1,6 @@
 import Logo from '../Assets/Images/logo-white.png';
 import sixteen from '../Assets/Images/16.png'
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return(
     <div className="Footer">
@@ -11,9 +12,9 @@ const Footer = () => {
       </div>
       <div className='down'>
         <p>info@email.ru</p>
-        <a href="#">Рекламодателям</a>
-        <a href="#">Правила сайта</a>
-        <a href="#">Соглашение</a>
+        <Link>Рекламодателям</Link>
+        <Link>Правила сайта</Link>
+        <Link>Соглашение</Link>
         <img width={50} src={sixteen} alt="16+" />
       </div>
     </div>
