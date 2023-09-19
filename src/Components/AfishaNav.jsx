@@ -31,17 +31,17 @@ const AfishaNav = () => {
               <div className="modal">
                 <h2>АФИША GO:</h2>
                 <ul>
-                  <li><Link to="/Home"><button onClick={closeModal}>КИНО</button></Link></li>
-                  <li><Link to="/News"><button onClick={closeModal}>МЕСТА GO</button></Link></li>
-                  <li><Link to="/Blog"><button onClick={closeModal}>ТЕАТРЫ</button></Link></li>
-                  <li><Link to="/Afisha"><button onClick={closeModal}>КОНЦЕРТЫ</button></Link></li>
-                  <li><Link to="/Pocupon"><button onClick={closeModal}>ВЫСТАВКИ</button></Link></li>
-                  <li><Link to="/Forum"><button onClick={closeModal}>ДЕТЯМ</button></Link></li>
-                  <li><Link to="/Radio"><button onClick={closeModal}>ОТДЫХ</button></Link></li>
-                  <li><Link to="/Ad"><button onClick={closeModal}>ОБУЧЕНИЕ</button></Link></li>
-                  <li><Link to="/Forum"><button onClick={closeModal}>СПОРТ</button></Link></li>
-                  <li><Link to="/Radio"><button onClick={closeModal}>ВЕЧЕРИНКИ</button></Link></li>
-                  <li><Link to="/Ad"><button onClick={closeModal}>РАЗНОЕ</button></Link></li>
+                  <li><Link to="/Home"><button onClick={closeModal}>Кино</button></Link></li>
+                  <li><Link to="/News"><button onClick={closeModal}>Места GO</button></Link></li>
+                  <li><Link to="/Blog"><button onClick={closeModal}>Театры</button></Link></li>
+                  <li><Link to="/Afisha"><button onClick={closeModal}>Концерты</button></Link></li>
+                  <li><Link to="/Pocupon"><button onClick={closeModal}>Выставки</button></Link></li>
+                  <li><Link to="/Forum"><button onClick={closeModal}>Детям</button></Link></li>
+                  <li><Link to="/Radio"><button onClick={closeModal}>Отдых</button></Link></li>
+                  <li><Link to="/Ad"><button onClick={closeModal}>Обучение</button></Link></li>
+                  <li><Link to="/Forum"><button onClick={closeModal}>Спорт</button></Link></li>
+                  <li><Link to="/Radio"><button onClick={closeModal}>Вечеринки</button></Link></li>
+                  <li><Link to="/Ad"><button onClick={closeModal}>Разное</button></Link></li>
                 </ul>
               </div>
             </button>
@@ -49,18 +49,18 @@ const AfishaNav = () => {
       </nav>
       </div>
       <div className="pc gap">
-        <div className='gap'>
-          <Link>КИНО</Link>
-          <Link>МЕСТА GO</Link>
-          <Link>ТЕАТРЫ</Link>
-          <Link>КОНЦЕРТЫ</Link>
-          <Link>ВЫСТАВКИ</Link>
-          <Link>ДЕТЯМ</Link>
-          <Link>ОТДЫХ</Link>
-          <Link>ОБУЧЕНИЕ</Link>
-          <Link>СПОРТ</Link>
-          <Link>ВЕЧЕРИНКИ</Link>
-          <Link>РАЗНОЕ</Link>
+        <div className='gap navafisha'>
+          <Link>Кино</Link>
+          <Link>Места GO</Link>
+          <Link>Театры</Link>
+          <Link>Концерты</Link>
+          <Link>Выставки</Link>
+          <Link>Детям</Link>
+          <Link>Отыдх</Link>
+          <Link>Обучение</Link>
+          <Link>Спорт</Link>
+          <Link>Вечеринки</Link>
+          <Link>Разное</Link>
         </div>
       </div>
     </div>
