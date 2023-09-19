@@ -21,7 +21,7 @@ const Footer = () => {
       </div>
       <div className='Copyright-Footer'>
         <hr />
-        <span>C Copyright Якутск GO 2023</span>        
+        <span> © Copyright Якутск GO 2023</span>        
       </div>
 
     </div>
