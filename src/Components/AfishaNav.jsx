@@ -49,7 +49,7 @@ const AfishaNav = () => {
       </nav>
       </div>
       <div className="pc gap">
-        <div>
+        <div className='gap'>
           <Link>КИНО</Link>
           <Link>МЕСТА GO</Link>
           <Link>ТЕАТРЫ</Link>
